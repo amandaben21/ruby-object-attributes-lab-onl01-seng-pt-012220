@@ -1,17 +1,21 @@
 class Person
-  def intialize (name)
-    @name=name
-  end
-  
+
   def name
     @name
   end
-end
-beyonce = Person.new
-beyonce.instance_variable_get(:@name) 
 
-def name
-  beyonce = Person.new
-beyonce.name = "Beyonce"
-beyonce.instance_variable_set(:@name , "Beyonce")
+
+def name=(new_name)
+  @name = new_name
+  
   end
+
+
+  def job=(new_job)
+  @job= new_job
+ end
+
+ def job
+  @job
+end
+end
